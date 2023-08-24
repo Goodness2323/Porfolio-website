@@ -38,6 +38,7 @@ section{
 .about, .services, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
+.games .games-content,
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
@@ -213,9 +214,53 @@ section .title::after{
     background: none;
 }
 
+/* games section styling */
+.games .title::after{
+    content: "PPSSPP Games";
+}
+.games .games-content .left{
+    width: 45%;
+}
+.games .games-content .left img{
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.games .games-content .right{
+    width: 55%
+}
+.games .games-content .right .text{
+    font-size: 25%;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.games .games-content .right .text span{
+    color: crimson;
+}
+.games .games-content .right p{
+    text-align: justify;
+}
+.games .games-content .right a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.games .games-content .right a:hover{
+    color: crimson;
+    background: none;
+}
+
 /* about section styling */
 .about .title::after{
-    content: "who i am";
+    content: "Who i am";
 }
 .about .about-content .left{
     width: 45%;
