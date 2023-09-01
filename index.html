@@ -19,13 +19,13 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Gaming HUB<span> PS4,PS5 and PS6 Games and Updates</span></a></div>
+            <div class="logo"><a href="#">Gaming HUB<span> Playstation, Xbox And Pc Games</span></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#games"  class="menu-btn">Games</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#movies" class="menu-btn">Movies</a></li>
                 <li><a href="#services" class="menu-btn">Services</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
@@ -40,7 +40,7 @@
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Goodness Ogunbanwo</div>
-                <div class="text-3">And I'm a Game Developer <span class="typing"></span></div>
+                <div class="text-3">And I'm a Game <span class="typing"></span></div>
                 
             </div>
         </div>
@@ -49,32 +49,36 @@
     <!-- games section start -->
     <section class="games" id="games">
         <div class="max-width">
-            <div class="column left">
             <h2 class="title">Games</h2>
+            <div class="column left">
             <div class="games-content">
-                <div class="column left">
-                    <a href="#">Download PPSSPP</a>
-                    <download src="PPSSPPSetup.exe">
-                    </download>
-                    <img src="images/Call of duty.png" alt="">
+                    <div class="column right">
+                <p><a href="https://www.ppsspp.org/download/">PPSSPP Setup</a></p><br>
+                <p><a href="https://coolrom.com.au/roms/psp/">PPSSPP Games</a></p><br>
+                <p><a href="https://oceanofgames.com/">Pc Games</a></p><br>
+                    </div>
                  </div>
               </div>
             </div>
          </div>
     </section>
 
-    <!-- about section start -->
-    <section class="about" id="about">
+   
+    <!-- movies section start -->
+    <section class="movies" id="movies">
         <div class="max-width">
-            <h2 class="title">About me</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="images/Call of duty.png" alt="">
-                </div>
-                <div class="column right">
-                    <div class="text">I'm Goodness and I'm a Game Developer<span class="typing-2"></span></div>
-                    <p>I am an enterpreneur,I create games and applications</p>
-                    
+            <h2 class="title">Movie lists</h2>
+            <div class="movies-content">
+                <div class="column-left">
+                    <button>
+                         <p><a href="https://www.sabishare.com/file/bUhSoJqsV41-justice-league-x-rwby-super-heroes-and-huntsmen-part-one-mkv">Justice League X RWBY part one</a></p></button><br>
+                         <button><p><a href="https://www.sabishare.com/file/GGnTEPrIZ07-the-flash-2023-netnaija-com-mkv">The Flash</a></p></button><br>
+                         <button><p><a href="https://www.sabishare.com/file/pVoJMkYol34-meg-2-the-trench-2023-netnaija-com-mkv">Meg 2: The Trench</a></p></button><br>
+                         <button><p><a href="https://www.sabishare.com/file/qZyOabayl35-you-are-so-not-invited-to-my-bat-mitzvah-2023-netnaija-com-mkv">You Are So Not Invited To My Bat Mitzvah </a></p></button><br>
+                         </div>
+                      </download>
+                    </download>
+                    </download>
                 </div>
             </div>
         </div>
@@ -110,6 +114,23 @@
             </div>
         </div>
     </section>
+
+  <!-- about section start -->
+  <section class="about" id="about">
+    <div class="max-width">
+        <h2 class="title">About me</h2>
+        <div class="about-content">
+            <div class="column left">
+                <img src="images/Call of duty.png" alt="">
+            </div>
+            <div class="column right">
+                <div class="text">I'm Goodness and I'm a Game<span class="typing-2"></span></div>
+                <p>I am an enterpreneur,I create games and applications</p>
+                
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- contact section start -->
     <section class="contact" id="contact">
@@ -167,7 +188,30 @@
                 </div>
             </div>
         </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script>
+        function SendEmail(){
+         Email.send({
+            Host : "smtpjs.gmail.com",
+            Username : "ogunbanwogoodness@gmail.com",
+            Password : "ogunbanwogoodness2010",
+            To : ' ogunbanwogoodness@gmail.com ',
+            From : document.getElementById("email").value,
+            Subject : "New Contact From Enquiry",
+            Body : " Name:"+ document.getElementById("name").value
+            +"Email:"+ document.getElementById("name").value
+            +"<br> Subject:"+ document.getElementById("name").value   
+            +"<br> Message:"+ document.getElementById("name").value         
+        }).then(
+            message => alert("Message Sent Successfully")
+          
+         );
+
+        }
+    </script>
+        <button><p><a href="file:///C:/Users/ACER/Desktop/Responsive%20Portfolio%20Website/RESPONSIVE%20FILL%20IN/index.html?">Contact Me</a></p></button><br>
     </section>
+
 
     <!-- footer section start -->
     <footer>
